@@ -1,4 +1,4 @@
-module Estudo where 
+module Estudo where  
 import Data.ByteString (intersperse)
 import Data.List (isSubsequenceOf)
 -- somatório com acumulador
@@ -26,12 +26,10 @@ amplitude [x] = x
 amplitude l = mymax l - mymin l 
 
 mymax:: Ord a=>[a]->a 
---mymax [] = 0 
 mymax [x] = x 
 mymax (h:t) |h<=head t = mymax t 
             |otherwise = mymax (h:tail t)
 mymin:: Ord a=>[a]->a 
---mymin [] = 0 
 mymin [x] = x 
 mymin (h:t) |h>=head t = mymin t 
             |otherwise = mymin (h:tail t)  
