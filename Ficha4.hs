@@ -28,13 +28,3 @@ mydivMod x y | x==y = (1,0)
              | x<y = (0,x)
              | otherwise = (d+1,r)
              where (d,r) = mydivMod (x-y) y 
-{-
--- 9 (a)
-[2^n | n<-[0..10]]
--- 9 (b)
-[(x,y) | x<-[1..5],y<-[1..5],x+y==6]
--- 9 (c)
-[[1..x] | x<-[1..5]]
--- 9 (d)
-[replicate x 1 | x<-[1..5]]   OU   [take x (repeat 1) | x<-[1..5]]
--}
